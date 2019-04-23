@@ -1,0 +1,16 @@
+import numpy as np
+import matplotlib.pyplot as plt
+t=np.arange(0,100,1)
+x1=np.sin(2*np.pi*t)
+plt.subplot(1,2,1)
+plt.stem(t,x1)
+plt.title("sine")
+plt.xlabel("Time")
+plt.ylabel("Amplitude")
+x2=np.cos(2*np.pi*t)
+plt.subplot(1,2,2)
+plt.stem(t,x2)
+plt.xlabel("Time")
+plt.ylabel("Amplitude")
+plt.title("cosine")
+plt.show()
